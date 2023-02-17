@@ -10,7 +10,7 @@
       "regexp": "[0-9]{12}"
     }
   },
-  "UserDetail": {
+  "User": {
     "_": {
       "items": 1
     },
