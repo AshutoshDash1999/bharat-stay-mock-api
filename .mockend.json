@@ -1,5 +1,8 @@
 {
   "Otp": {
+    "_": {
+      "items": 1
+    },
     "otp1": {
       "regexp": "[0-9]{6}"
     },
@@ -31,7 +34,9 @@
     "_": {
       "items": 3
     },
-    "hotelName": {},
+    "hotelName": {
+      "string": {}
+    },
     "hotelImage": {
       "regexp": "https://via.placeholder.com/150"
     }
@@ -43,8 +48,8 @@
     "totalEarning": {
       "regexp": "[0-9]{2},[0-9]{3}"
     },
-    "rating":{
-        "regexp":"[0-4]/5"
+    "rating": {
+      "regexp": "[0-4]/5"
     }
   }
 }
