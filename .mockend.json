@@ -1,7 +1,18 @@
 {
-  "User": {
+  "Otp": {
+    "otp1": {
+      "regexp": "[0-9]{6}"
+    },
+    "otp2": {
+      "regexp": "[0-9]{6}"
+    },
+    "aadhaar": {
+      "regexp": "[0-9]{12}"
+    }
+  },
+  "UserDetail": {
     "_": {
-      "items": 5
+      "items": 1
     },
     "name": {
       "string": {}
@@ -9,23 +20,40 @@
     "avatarUrl": {
       "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
     },
-    "statusMessage": {
-      "string": ["working from home", "watching Netflix"]
+    "gender": {
+      "string": ["Male", "Female"]
     },
     "email": {
       "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
     },
-    "color": {
-      "regexp": "#[0-9A-F]{6}"
+    "dob": ""
+  },
+  "Hotel": {
+    "_": {
+      "items": 3
     },
-    "age": {
-      "int": {
-        "min": 21,
-        "max": 100
-      }
+    "hotelName": {},
+    "hotelImage": {
+      "regexp": "https://via.placeholder.com/150"
+    }
+  },
+  "Payment": {
+    "_": {
+      "items": 1
     },
-    "isPublic": {
-      "boolean": {}
+    "totalEarning": {
+      "regexp": "[0-9]{2},[0-9]{3}"
+    },
+    "rating":{
+        "regex":"[0-4]/5"
+    },
+    "earnings":{
+        "_":{
+            "items":5
+        },
+        "hotelName":{},
+        "transactionId":"[0-9][A-Z]{10}",
+        "amount":"[0-9]{3}"
     }
   }
 }
