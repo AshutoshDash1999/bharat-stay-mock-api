@@ -46,14 +46,6 @@
     },
     "rating":{
         "regex":"[0-4]/5"
-    },
-    "earnings":{
-        "_":{
-            "items":5
-        },
-        "hotelName":{},
-        "transactionId":"[0-9][A-Z]{10}",
-        "amount":"[0-9]{3}"
     }
   }
 }
